@@ -1,0 +1,53 @@
+.genres{
+    background-color: #1a1b1e;
+    color: white;
+    padding: 10px;
+    position: relative;
+}
+.genres_header{
+    display: flex;
+    flex-direction: row;
+    padding: 0 8px 8px 8px;
+}
+.genres_main{
+    text-transform: uppercase;
+    display: grid;
+    gap: 16px;
+    width: 100%;
+    grid-template-columns: repeat(auto-fill,minmax(9em,1fr));
+}
+.type_genres{
+    border-radius: 5px;
+    display: flex;
+    height: 96px;
+    min-width: 124px;
+    width: 100%;
+    position: relative;
+}
+.type_genres:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+.type_genres h5 {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    margin: 0;
+}
+.type_genres img {
+    height: 25px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    filter: invert(100%);
+    opacity: 0.5;
+}
+div #indieGenres,div #familyGenres, div #pistolGenres{
+    background-color: #008746;
+}
+div #adventureGenres, div #drawlerGenres, div #strategyGenres{
+    background-color: #008572;
+}
+div #simulatorGenres, div #rpgGenres{
+    background-color: #007c8f;
+}
